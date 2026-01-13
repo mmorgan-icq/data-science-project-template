@@ -60,22 +60,69 @@
 
 ```text
 ├── data/
-│   ├── raw/
-│   ├── processed/
-│   └── features/
 ├── notebooks/
 ├── pipeline/
-│   ├── etl/
-│   ├── feature_engineering/
-│   ├── modeling/
+│   ├── data/
+│   ├── features/
+│   ├── models/
 │   ├── training/
 │   ├── inference/
+│   ├── monitoring/   
 │   └── utils/
 ├── tests/
 ├── configs/
 ├── artifacts/
 ├── scripts/
-└── README.md
+├── requirements.txt
+├── README.md
+└── LICENSE
+```
+
+### Repo Structure Description
+- data/ -- stores data used throughout pipeline; should not be committed to repo 
+    - data/raw/ 
+        - Immutable, source-of-truth data
+        - Original exports from databases, APIs
+        - Never modified after ingestion
+    - data/processed/
+        - Cleaned and transformed data
+        - After joins, filtering, normalization, and deduplication
+    - data/features/
+        - Model ready feature tables
+        - Outputs of feature engineering pipelines
+- notebooks/ -- exploration and analysis
+    - EDA
+    - Model debugging and analysis
+    - Experiments
+- pipeline/ -- production code
+    - pipeline/etl/ 
+        - Data ingestion and loading
+        - Database queries
+    - pipeline/feature_engineering
+        - Feature engineering logic
+    - pipeline/modeling
+        - Model definitions and wrappers
+    - pipeline/inference
+        - Prediction logic
+    - pipeline/monitoring
+        - Data drift 
+        - Model drift 
+    - pipeline/utils
+        - Shared utilities (logging, config loading, helpers)
+- tests/ 
+    - Unit tests
+    - Data and feature validation tests
+- configs/ -- YAML and JSON files
+    - Model hyperparameters
+    - File paths and environment settings
+    - Training and inference configs
+    - Monitoring thresholds 
+- artifacts/ -- generated outputs from training or evaluation
+    - Trained model files
+    - Metrics and evaluation results
+- requirements.txt -- defines Python dependencies required to run pipeline
+    - ML libraries
+    - Data libraries
 
 ## 5. Model Architecture
 
