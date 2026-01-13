@@ -1,4 +1,3 @@
-# data-science-project-template
 
 # Project Title
 
@@ -184,7 +183,7 @@
 
 ## 10. Instructions for Running
 
-### Prerequisitions & Installation
+### Prerequisites & Installation
 - Python version
 - System dependencies 
 - Requirements.txt
