@@ -10,11 +10,9 @@
 
 | Role | Name | Email / Slack |
 |-----|------|---------------|
-| Product Owner |  |  |
-| Tech Lead |  |  |
-| ML Owner |  |  |
-| Data Owner |  |  |
-| On-Call / Support |  |  |
+| Data Science Lead |  |  |
+| Engineering Lead |  |  |
+| Data Lead |  |  |
 
 ---
 
@@ -26,12 +24,7 @@
 
 ### Success Metrics
 - Business KPIs tied to model outcomes
-- Examples: revenue lift, cost reduction, error reduction
-
-### Constraints
-- Latency requirements
-- Cost constraints
-- Regulatory or compliance requirements
+- Examples: time saved, engagement lift, deals sourced 
 
 ---
 
@@ -50,7 +43,6 @@
 ### Feature Engineering
 - Core features used
 - Transformations and encodings
-- Feature store usage (if applicable)
 
 ### Data Validation
 - Schema checks
@@ -72,10 +64,10 @@
 │   ├── processed/
 │   └── features/
 ├── notebooks/
-├── src/
-│   ├── data/
-│   ├── features/
-│   ├── models/
+├── pipeline/
+│   ├── etl/
+│   ├── feature_engineering/
+│   ├── modeling/
 │   ├── training/
 │   ├── inference/
 │   └── utils/
@@ -84,3 +76,77 @@
 ├── artifacts/
 ├── scripts/
 └── README.md
+
+## 5. Model Architecture
+
+### Architecture
+- Diagram 
+
+### Model Types & Hyperparameters
+| Model | Parameter | Value | Notes |
+|------|-------------|----------|-----------------|
+|  |  |  |  |
+
+## 6. Training Strategy 
+
+### Training Setup
+- Loss function
+- Optimization method
+- Cross-validation strategy
+
+### Compute Resources
+- CPU / GPU
+- Training duration 
+
+## 7. Model Performance
+
+### Offline Metrics
+| Metric | Train | Validation | Test |
+|------|-------------|----------|-----------------|
+|  |  |  |  |
+
+### Business Impact Metrics
+- Lift vs baseline
+- Cost savings
+- Risk reduction 
+
+### Benchmark Comparison
+- Baseline model
+- Previous production model
+- Heuristic approach
+
+### Known Limitations
+- Edge cases
+- Biases
+- Data gaps
+
+## 8. Explainability 
+- Feature importance method 
+
+## 9. Monitoring 
+
+### Model Drift 
+- Monitoring cadence
+- Metrics tracked 
+- Location of results
+
+### Data Drift 
+- Monitoring cadence
+- Metrics tracked
+- Location of results 
+
+## 10. Instructions for Running
+
+### Prerequisitions & Installation
+- Python version
+- System dependencies 
+- Requirements.txt
+
+## 11. Last Updated 
+- Date:
+- Updated by:
+- Change summary:
+
+
+
+
